@@ -1,0 +1,41 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: shiji.theme\n"
+"POT-Creation-Date: 2014-01-10 09:31+0000\n"
+"PO-Revision-Date: 2014-01-10 17:33+0800\n"
+"Last-Translator: TsungWei Hu <marr.tw@gmail.com>\n"
+"Language-Team: Plone I18N <plone-i18n@lists.sourceforge.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"Language-Code: zh-tw\n"
+"Language-Name: Traditional Chinese\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: shiji.theme\n"
+
+#. Default: "Recent Event"
+#: ./browser/front_page.pt:35
+msgid "frontpage_event"
+msgstr "最新活動"
+
+#. Default: "Recent Info"
+#: ./browser/front_page.pt:54
+msgid "frontpage_info"
+msgstr "最新公告"
+
+#. Default: "Recent Issue"
+#: ./browser/front_page.pt:73
+msgid "frontpage_issue"
+msgstr "建議處理事項"
+
+#. Default: "Recent Minutes"
+#: ./browser/front_page.pt:92
+msgid "frontpage_minutes"
+msgstr "會議記錄"
+
+#. Default: "Recent News"
+#: ./browser/front_page.pt:17
+msgid "frontpage_news"
+msgstr "最新新聞"
+

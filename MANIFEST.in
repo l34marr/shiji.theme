@@ -1,0 +1,2 @@
+recursive-include shiji *
+global-exclude *pyc

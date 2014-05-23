@@ -1,0 +1,150 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      lang="en"
+      metal:use-macro="context/main_template/macros/master"
+      i18n:domain="shiji.theme">
+<body>
+
+<metal:content-core fill-slot="main">
+  <metal:content-core define-macro="content-core">
+
+<h1 class="documentFirstHeading">
+<span tal:content="view/Title" />
+</h1>
+
+<div id="bcontent"
+ tal:define="isAnon context/@@plone_portal_state/anonymous;">
+
+<div class="box">
+<h2 class="contrast" style="background-color: #c36f19"
+ i18n:translate="frontpage_news">Recent News</h2>
+<ul>
+<tal:news condition="view/get_news"
+ tal:repeat="item view/get_news">
+  <li>
+    <a href=""
+     tal:attributes="href python:item[2];
+                     title python:item[0]">
+     <span tal:content="python:item[0]">Text</span><br />
+    </a>
+     <span tal:content="python:item[1]">Date</span>
+  </li>
+</tal:news>
+</ul>
+</div>
+
+<div class="box">
+<h2 class="contrast" style="background-color: #8f910f"
+ i18n:translate="frontpage_event">Recent Event</h2>
+<ul>
+<tal:event condition="view/get_event"
+ tal:repeat="item view/get_event">
+  <li>
+    <a href=""
+     tal:attributes="href python:item[2];
+                     title python:item[0]">
+     <span tal:content="python:item[0]">Text</span><br />
+    </a>
+     <span tal:content="python:item[1]">Date</span>
+  </li>
+</tal:event>
+</ul>
+</div>
+
+<div class="box">
+<h2 class="contrast" style="background-color: #439005"
+ i18n:translate="frontpage_info">Recent Info</h2>
+<ul>
+<tal:info condition="view/get_info"
+ tal:repeat="item view/get_info">
+  <li>
+    <a href=""
+     tal:attributes="href python:item[2];
+                     title python:item[0]">
+     <span tal:content="python:item[0]">Text</span><br />
+    </a>
+     <span tal:content="python:item[1]">Date</span>
+  </li>
+</tal:info>
+</ul>
+</div>
+
+<div class="box"
+ tal:condition="python: not isAnon">
+<h2 class="contrast" style="background-color: #15837f"
+ i18n:translate="frontpage_issue">Recent Issue</h2>
+<ul>
+<tal:issue condition="view/get_issue"
+ tal:repeat="item view/get_issue">
+  <li>
+    <a href=""
+     tal:attributes="href python:item[2];
+                     title python:item[0]">
+     <span tal:content="python:item[0]">Text</span><br />
+    </a>
+     <span tal:content="python:item[1]">Date</span>
+  </li>
+</tal:issue>
+</ul>
+</div>
+
+<div class="box"
+ tal:condition="python: not isAnon">
+<h2 class="contrast" style="background-color: #0064a0"
+ i18n:translate="frontpage_minutes">Recent Minutes</h2>
+<ul>
+<tal:minutes condition="view/get_minutes"
+ tal:repeat="item view/get_minutes">
+  <li>
+    <a href=""
+     tal:attributes="href python:item[2];
+                     title python:item[0]">
+     <span tal:content="python:item[0]">Text</span><br />
+    </a>
+     <span tal:content="python:item[1]">Date</span>
+  </li>
+</tal:minutes>
+</ul>
+</div>
+
+</div>
+
+<div class="visualClear"><!-- --></div>
+
+<div id="banner">
+<ul class="visualNoMarker listing listing-columns">
+<li>
+<div class="component"><a href="#"><img class="image-inline" src="/++resource++shiji.theme/images/bannertest.jpg" /></a></div>
+</li>
+<li>
+<div class="component"><a href="#"><img class="image-inline" src="/++resource++shiji.theme/images/bannertest.jpg" /></a></div>
+</li>
+<li>
+<div class="component"><a href="#"><img class="image-inline" src="/++resource++shiji.theme/images/bannertest.jpg" /></a></div>
+</li>
+<li>
+<div class="component"><a href="#"><img class="image-inline" src="/++resource++shiji.theme/images/bannertest.jpg" /></a></div>
+</li>
+<li>
+<div class="component"><a href="#"><img class="image-inline" src="/++resource++shiji.theme/images/bannertest.jpg" /></a></div>
+</li>
+<li>
+<div class="component"><a href="#"><img class="image-inline" src="/++resource++shiji.theme/images/bannertest.jpg" /></a></div>
+</li>
+<li>
+<div class="component"><a href="#"><img class="image-inline" src="/++resource++shiji.theme/images/bannertest.jpg" /></a></div>
+</li>
+<li>
+<div class="component"><a href="#"><img class="image-inline" src="/++resource++shiji.theme/images/bannertest.jpg" /></a></div>
+</li>
+<li></li>
+</ul>
+</div>
+
+  </metal:content-core>
+</metal:content-core>
+
+</body>
+</html>

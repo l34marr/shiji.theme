@@ -1,0 +1,29 @@
+<configure
+  xmlns="http://namespaces.zope.org/zope"
+  xmlns:five="http://namespaces.zope.org/five"
+  xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+  xmlns:browser="http://namespaces.zope.org/browser"
+  xmlns:plone="http://namespaces.plone.org/plone"
+  xmlns:i18n="http://namespaces.zope.org/i18n"
+  i18n_domain="shiji.theme">
+
+  <five:registerPackage package="." initialize=".initialize" />
+  <include package=".browser" />
+  <i18n:registerTranslations directory="locales" />
+
+  <genericsetup:registerProfile
+    name="default"
+    title="ShiJi Theme"
+    directory="profiles/default"
+    description='ShiJi Theme Package'
+    provides="Products.GenericSetup.interfaces.EXTENSION" />
+
+  <browser:resourceDirectory
+    name="shiji.theme"
+    directory="resources" />
+
+  <plone:static
+    directory="resources"
+    type="theme" />
+
+</configure>

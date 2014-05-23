@@ -1,0 +1,254 @@
+/* - masonry.css - */
+@media screen {
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Isotope filtering */
+.isotope,
+.isotope .isotope-item {
+  /* change duration value to whatever you like */
+  -webkit-transition-duration: 0.8s;
+     -moz-transition-duration: 0.8s;
+      -ms-transition-duration: 0.8s;
+       -o-transition-duration: 0.8s;
+          transition-duration: 0.8s;
+}
+.isotope {
+  -webkit-transition-property: height, width;
+     -moz-transition-property: height, width;
+      -ms-transition-property: height, width;
+       -o-transition-property: height, width;
+          transition-property: height, width;
+}
+.isotope .isotope-item {
+  -webkit-transition-property: -webkit-transform, opacity;
+     -moz-transition-property:    -moz-transform, opacity;
+      -ms-transition-property:     -ms-transform, opacity;
+       -o-transition-property:      -o-transform, opacity;
+          transition-property:         transform, opacity;
+}
+
+/**** disabling Isotope CSS3 transitions ****/
+.isotope.no-transition,
+.isotope.no-transition .isotope-item,
+.isotope .isotope-item.no-transition {
+  -webkit-transition-duration: 0s;
+     -moz-transition-duration: 0s;
+      -ms-transition-duration: 0s;
+       -o-transition-duration: 0s;
+          transition-duration: 0s;
+}
+
+/* STYLES */
+#bcontent {
+  /* width: 960px; */
+  /* margin: 0 160px;  0 auto */
+  margin-left: -16px;
+  z-index: 1;
+}
+h2.contrast {
+  border-radius: 4px;
+  color: #fff;
+  font-weight: bold;
+  padding: 3px 0 3px 20px;
+}
+#bcontent a:link {
+  color: #111111;
+}
+#bcontent a:hover {
+  color: #222222;
+}
+#bcontent a:visited {
+  color: #111111;
+}
+.box-info a:link a:visited{
+  /* text-decoration: underline; */
+  color: #FFFFFF;
+}
+.box {
+  background: #ffffff;
+  color: #212121;
+  width: 300px;
+  float: left;
+  margin-bottom: 12px;
+  margin-left: 12px;
+}
+.box-date {
+  color: #fff;
+  font-family: "Open Sans","微軟正黑體",sans-serif;
+  font-size: 12px;
+  margin-top: 5px;
+  padding-top: 0;
+  padding-left: 10px;
+  padding-right: 10px;	
+}
+.box-title {
+  color: #fff;
+  font-family: "Open Sans","微軟正黑體",sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  margin-top: 6px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.box-info {
+  color: #fff;
+  font-family: "Open Sans","微軟正黑體",sans-serif;
+  font-size: 14px;
+  line-height: 1.5em;
+  margin-top: 0px;
+  padding-left: 10px;
+  margin-right: 5%;	
+  margin-bottom: 10px;
+}
+.box-more {
+  float: right;
+  width: 43px;
+  height: 15px;
+  margin-bottom: 7px;
+  margin-top: 7px;
+  padding-bottom: 7px;
+}
+.box-more a img:hover{
+  top:0px;
+}
+.eng-info {
+  color: #666666;
+  display: block;
+  font-family: "Open Sans","微軟正黑體",sans-serif;
+  font-size: 11px;
+  font-weight: normal;
+  letter-spacing: 0.02em;
+  line-height: 1em;
+  margin-bottom: 10px;
+  margin-top: -7px;
+}
+.event-color{
+  background-color: #2274a4;
+}
+.nominator-color{
+  background-color: #8f8463;
+}
+.award-color{
+  background-color: #2e794a;
+}
+.news-color{
+  background-color: #3b3074;
+}
+.forum-color{
+  background-color: #da522c;
+}
+.others-color{
+  background-color: #cc0000;
+}
+#nav {
+  /* float: left; */
+  /* margin-left: 20px; */
+  /* margin-top: 20px; */
+  /* left: 11%;*/
+  padding-bottom: 20px;
+  padding-top: 20px;
+  position: absolute;
+  width: 1040px;
+  margin-left: 50px;
+}
+#nav a {
+  text-decoration: none;
+  font-size: 15px;
+  line-height: 25px;
+  color: #595959;
+}
+#nav a:hover {
+  color: #ff0000;
+}
+#nav a:active {
+  color: #151515;
+}
+#nav ul li {
+  display: inline;
+}
+
+#newsbox {
+  background-color: #fafafa;
+  display: block;
+  float: right;
+  overflow: visible;
+  width: 250px;
+}
+#newsbox .top {
+  /* background-color:#666; */
+  /* background-position: right top; */
+  /* background-repeat: no-repeat; */
+  /* height: 43px; */
+  /* line-height: 42px; */
+  width: 250px;
+}
+#newsbox .title {
+  color: #fff;
+  font-family: Tahoma;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: left;
+  padding-left: 10px;
+  text-decoration: none;
+}
+#newsbox .middle {
+  background-position: right top;
+  background-repeat: repeat-y;
+  text-align: center;
+  width: 250px;
+}
+#newsbox .bottom {
+  background-position: right top;
+  background-repeat: no-repeat;
+  /* height: 15px; */
+  width: 250px;
+}
+.newslink, .newslink:link, .newslink:visited {
+  color: #000;
+  font-family: Tahoma;
+  font-size: 15px;
+  font-weight: bold;
+  text-decoration: none;
+}
+.newslink:hover {
+  color: #cc0000;
+}
+.newscontent {
+  padding: 0 10px;
+  text-align: left;
+  width: 230px;
+}
+.newslist {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px #ddd dotted;
+}
+
+}

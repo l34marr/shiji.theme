@@ -1,0 +1,14 @@
+<configure
+  xmlns="http://namespaces.zope.org/zope"
+  xmlns:browser="http://namespaces.zope.org/browser"
+  i18n_domain="shiji.theme">
+
+  <browser:page
+    for="*"
+    name="front_page"
+    class=".view.FrontPage"
+    template="front_page.pt"
+    permission="zope2.View"
+    layer="shiji.theme.interfaces.IBrowserLayer" />
+
+</configure>
