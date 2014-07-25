@@ -5,7 +5,7 @@ from Products.CMFCore.utils import getToolByName
 from plone.app.contenttypes.interfaces import INewsItem
 from plone.app.contenttypes.interfaces import IEvent
 from plone.app.contenttypes.interfaces import IFile
-from shiji.content.proposal import IProposal
+from shiji.content.issue import IIssue
 
 
 class FrontPage(BrowserView):
@@ -82,7 +82,7 @@ class FrontPage(BrowserView):
         portal_state = getMultiAdapter((context, self.request), name='plone_portal_state')
         path = portal_state.navigation_root_path() + '/issue'
         query = {}
-        query['object_provides'] = IProposal.__identifier__
+        query['object_provides'] = IIssue.__identifier__
         query['path'] = path
         query['state'] = ('private', )
         query['sort_on'] = 'created'
@@ -92,7 +92,7 @@ class FrontPage(BrowserView):
         brains = catalog(**query)[:limit]
         for b in brains:
             sdate = str(b.created)[:10].replace('/','-')
-            result.append((b.Title, sdate, b.getURL()))
+            result.append((b.Title, b.Description, sdate, b.getURL()))
         return result
 
     def get_minutes(self):
