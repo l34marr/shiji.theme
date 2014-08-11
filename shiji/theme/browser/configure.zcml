@@ -5,6 +5,14 @@
 
   <browser:page
     for="*"
+    name="tinymce-jsonconfiguration"
+    class=".tinymce.TinyMCEBrowserView"
+    permission="zope2.View"
+    attribute="jsonConfiguration"
+    layer="shiji.theme.interfaces.IBrowserLayer" />
+
+  <browser:page
+    for="*"
     name="front_page"
     class=".view.FrontPage"
     template="front_page.pt"
