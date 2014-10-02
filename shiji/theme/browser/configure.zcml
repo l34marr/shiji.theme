@@ -4,18 +4,25 @@
   i18n_domain="shiji.theme">
 
   <browser:page
-    for="*"
     name="tinymce-jsonconfiguration"
+    for="*"
     class=".tinymce.TinyMCEBrowserView"
     permission="zope2.View"
     attribute="jsonConfiguration"
     layer="shiji.theme.interfaces.IBrowserLayer" />
 
   <browser:page
-    for="*"
     name="front_page"
+    for="*"
     class=".view.FrontPage"
     template="front_page.pt"
+    permission="zope2.View"
+    layer="shiji.theme.interfaces.IBrowserLayer" />
+
+  <browser:page
+    name="folder_listing"
+    for="plone.app.contenttypes.interfaces.IFolder"
+    template="folder_listing.pt"
     permission="zope2.View"
     layer="shiji.theme.interfaces.IBrowserLayer" />
 
