@@ -88,15 +88,18 @@ h2.contrast {
 }
 .box-info a:link a:visited{
   /* text-decoration: underline; */
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .box {
-  background: #ffffff;
-  color: #212121;
-  width: 300px;
+  background: none repeat scroll 0 0 #ffffff;
+  border: 3px solid #ffffff;
+  box-shadow: 0 0 2px 0 rgba(38, 19, 9, 0.4);
+  color: #666666;
   float: left;
-  margin-bottom: 12px;
-  margin-left: 12px;
+  margin-bottom: 20px;
+  margin-left: 0px;
+  margin-right: 32px;
+  width: 330px;
 }
 .box-date {
   color: #fff;
