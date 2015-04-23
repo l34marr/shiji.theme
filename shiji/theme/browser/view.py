@@ -30,7 +30,7 @@ class FrontPage(BrowserView):
         query['state'] = ('published', )
         query['sort_on'] = 'created'
         query['sort_order'] = 'reverse'
-        limit = 3
+        limit = 5
         result = []
         brains = catalog(**query)[:limit]
         for b in brains:
@@ -49,7 +49,7 @@ class FrontPage(BrowserView):
         query['state'] = ('published', )
         query['sort_on'] = 'start'
         query['sort_order'] = 'reverse'
-        limit = 3
+        limit = 5
         result = []
         brains = catalog(**query)[:limit]
         for b in brains:
@@ -68,7 +68,7 @@ class FrontPage(BrowserView):
         query['state'] = ('published', )
         query['sort_on'] = 'created'
         query['sort_order'] = 'reverse'
-        limit = 3
+        limit = 5
         result = []
         brains = catalog(**query)[:limit]
         for b in brains:
@@ -87,7 +87,7 @@ class FrontPage(BrowserView):
         query['state'] = ('private', )
         query['sort_on'] = 'created'
         query['sort_order'] = 'reverse'
-        limit = 3
+        limit = 5
         result = []
         brains = catalog(**query)[:limit]
         for b in brains:
@@ -106,7 +106,7 @@ class FrontPage(BrowserView):
         query['state'] = ('private', )
         query['sort_on'] = 'created'
         query['sort_order'] = 'reverse'
-        limit = 3
+        limit = 5
         result = []
         brains = catalog(**query)[:limit]
         for b in brains:
